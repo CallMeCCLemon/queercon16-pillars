@@ -1,0 +1,25 @@
+###############################################################################
+#    Author: Michael Frohlich
+#      Date: 2019
+# Copyright: 2019 Michael Frohlich - Modified BSD License
+###############################################################################
+
+[Unit]
+Description=QC Kiosk
+Wants=graphical.target
+Wants=network-online.target
+After=graphical.target
+After=network-online.target
+
+[Service]
+Environment=DISPLAY=:0.0
+Environment=XAUTHORITY=/home/pi/.Xauthority
+Type=simple
+ExecStart=/home/pi/qc-main.sh
+Restart=on-abort
+User=pi
+Group=pi
+
+[Install]
+WantedBy=graphical.target
+

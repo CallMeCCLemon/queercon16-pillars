@@ -1,0 +1,4 @@
+In one console tab, run: "node server.js"
+In another console tab, run: "npm start"
+
+Open browser, go to: "http://localhost:3000/"
