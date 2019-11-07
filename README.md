@@ -17,8 +17,8 @@ contributions and overall results.
 
 Consists of two components:
 
-- Message Ingestion
-- Message Processor
+- Message Ingestion - Handle message communication with badges.
+- Message Processor - Takes received messages and interfaces with pillar and DB.
 
 #### Message Ingestion
 
@@ -48,5 +48,5 @@ done without him.
 
 Special thanks goes out to the following:
 
-[@gbps](https://github.com/Gbps)
-[@duplico](https://github.com/duplico)
+- [@gbps](https://github.com/Gbps)
+- [@duplico](https://github.com/duplico)
